@@ -54,6 +54,7 @@ var Yts = Backbone.Collection.extend({
                         imdb:       movie.ImdbCode.replace('tt', ''),
                         title:      movie.MovieTitleClean,
                         year:       movie.MovieYear,
+                        genre:      movie.Genre,
                         runtime:    +traktInfo.runtime || 0,
                         synopsis:   traktInfo.overview || "",
                         voteAverage:parseFloat(movie.MovieRating),
